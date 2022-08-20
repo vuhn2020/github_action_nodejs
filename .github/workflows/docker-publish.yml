@@ -6,8 +6,6 @@ name: Docker
 # documentation.
 
 on:
-  schedule:
-    - cron: '27 15 * * *'
   push:
     branches: [ "main" ]
     # Publish semver tags as releases.
@@ -19,7 +17,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: vuhn16
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: github_action_nodejs
 
 
 
