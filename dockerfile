@@ -12,7 +12,7 @@ RUN npm install
 RUN npx prisma generate
 
 # Migrate deploy
-RUN npx prisma migrate deploy
+# RUN npx prisma migrate deploy
 
 # Bundle app source
 COPY . .
